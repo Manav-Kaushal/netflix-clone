@@ -10,6 +10,11 @@
   flex-direction: column;
 }
 
+.signupScreen > form > h1 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
 .signupScreen > form > input {
   height: 40px;
   outline-width: 0;
