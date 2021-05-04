@@ -31,9 +31,10 @@ function SignupScreen() {
         passwordRef.current.value
       )
       .then((authUser) => {
-        console.log(authUser).catch((error) => {
-          alert(error.message);
-        });
+        console.log(authUser);
+      })
+      .catch((error) => {
+        alert(error.message);
       });
   };
 
@@ -42,7 +43,7 @@ function SignupScreen() {
       <form>
         <h1>Sign In</h1>
         <input ref={emailRef} type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" name="" id="" />
+        <input ref={passwordRef} type="password" placeholder="Password" />
         <button type="submit" onClick={signIn}>
           Sign In
         </button>
